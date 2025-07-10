@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Breath recorder</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- 🔷 ШАПКА -->
+<header class="header">
+  <h1>
+    <i class="fas fa-lungs"></i>
+    Ваш вклад в исследование дыхательных техник
+  </h1>
+  
+  <p class="instructions">
+    <em>
+      Перед началом записи сядьте удобно в тихом, спокойном помещении. Запись производится через встроенный микрофон - не используйте наушники или гарнитуру.
+ <br>
+Расположите устройство на расстоянии примерно 10–20 см от рта. Если дыхание звучит слишком тихо, можно поднести ближе - до 2–5 см, но не касайтесь микрофона и не закрывайте его рукой.
+ <br>
+Дышите ртом и/или носом, как указано в видеогиде. Каждый видеогайд включает 5 секунд до начала и 5 секунд после окончания сессии - эти периоды также следует записывать. Вы можете потренироваться перед началом записи.
+ <br>
+Всего предстоит выполнить 3 дыхательные техники, по 3 сессии в каждой - всего 9 записей. По завершении всех сессий нажмите «Скачать ZIP», чтобы сохранить все аудиофайлы и автоматически сгенерированные метаданные.
+    <br>
+    ⚠️ Затем прикрепите ZIP-файл в Google-форму и укажите ваш 5-значный код (например, k7gq1) в соответствующем поле.
+    </em>
+</p>
+
+
+</header>
+
+
+<!-- 🔶 ТЕХНИКА 1 -->
+<section class="technique">
+  <h2 class="technique-title">Техника 1: Box breathing (3-3-3-3)</h2>
+  <div class="technique-content">
+    
+    <!-- Видеоинструкция -->
+    <div class="video-side">
+      <video src="video/3333_rus.mp4" controls></video>
+    </div>
+
+    <!-- Сессии -->
+    <div class="sessions">
+      <div class="session">
+        <div class="waveform-indicator" id="waveform-tech1-s1" title="Идёт запись">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span class="session-label">Сессия 1</span>
+        <div class="buttons">
+          <button id="start-tech1-s1" title="Начать запись">▶</button>
+          <button id="stop-tech1-s1" title="Конец записи">■</button>
+          <button id="play-tech1-s1" title="Воспроизвести">🔊</button>
+          <button id="stopplay-tech1-s1" title="Остановить прослушивание">🔇</button>
+          <button id="redo-tech1-s1" title="Перезаписать">⟳</button>
+          <span id="status-tech1-s1" class="indicator not-recorded" title="Не записано">⛔</span>
+        </div>
+      </div>
+
+      <div class="session">
+        <div class="waveform-indicator" id="waveform-tech1-s2" title="Идёт запись">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span class="session-label">Сессия 2</span>
+        <div class="buttons">
+          <button id="start-tech1-s2" title="Начать запись">▶</button>
+          <button id="stop-tech1-s2" title="Конец записи">■</button>
+          <button id="play-tech1-s2" title="Воспроизвести">🔊</button>
+          <button id="stopplay-tech1-s2" title="Остановить прослушивание">🔇</button>
+          <button id="redo-tech1-s2" title="Перезаписать">⟳</button>
+          <span id="status-tech1-s2" class="indicator not-recorded" title="Не записано">⛔</span>
+        </div>
+      </div>
+
+      <div class="session">
+        <div class="waveform-indicator" id="waveform-tech1-s3" title="Идёт запись">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span class="session-label">Сессия 3</span>
+        <div class="buttons">
+          <button id="start-tech1-s3" title="Начать запись">▶</button>
+          <button id="stop-tech1-s3" title="Конец записи">■</button>
+          <button id="play-tech1-s3" title="Воспроизвести">🔊</button>
+          <button id="stopplay-tech1-s3" title="Остановить прослушивание">🔇</button>
+          <button id="redo-tech1-s3" title="Перезаписать">⟳</button>
+          <span id="status-tech1-s3" class="indicator not-recorded" title="Не записано">⛔</span>
+        </div>
+      </div>
+
+
+        <div class="tech-info">
+      Вдыхайте через нос на 3 секунды, затем удерживайте дыхание 3 секунды. Медленно выдыхайте через рот на 3 секунды и снова задержите дыхание на 3 секунды. Повторяйте цикл в течение всей сессии. Эта техника способствует стабилизации внимания и снижению тревожности. 
+    </div>
+
+
+    </div>
+
+  
+
+
+  </div>
+</section>
+
+
+<!-- 🔶 ТЕХНИКА 2 -->
+<section class="technique">
+  <h2 class="technique-title">Техника 2: 4-2-4 breathing</h2>
+  <div class="technique-content">
+    
+    <!-- Видеоинструкция -->
+    <div class="video-side">
+      <video src="video/424_rus.mp4" controls></video>
+    </div>
+
+    <!-- Сессии -->
+    <div class="sessions">
+      <div class="session">
+        <div class="waveform-indicator" id="waveform-tech2-s1" title="Идёт запись">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span class="session-label">Сессия 1</span>
+        <div class="buttons">
+          <button id="start-tech2-s1" title="Начать запись">▶</button>
+          <button id="stop-tech2-s1" title="Конец записи">■</button>
+          <button id="play-tech2-s1" title="Воспроизвести">🔊</button>
+          <button id="stopplay-tech2-s1" title="Остановить прослушивание">🔇</button>
+          <button id="redo-tech2-s1" title="Перезаписать">⟳</button>
+          <span id="status-tech2-s1" class="indicator not-recorded" title="Не записано">⛔</span>
+        </div>
+      </div>
+
+      <div class="session">
+        <div class="waveform-indicator" id="waveform-tech2-s2" title="Идёт запись">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span class="session-label">Сессия 2</span>
+        <div class="buttons">
+          <button id="start-tech2-s2" title="Начать запись">▶</button>
+          <button id="stop-tech2-s2" title="Конец записи">■</button>
+          <button id="play-tech2-s2" title="Воспроизвести">🔊</button>
+          <button id="stopplay-tech2-s2" title="Остановить прослушивание">🔇</button>
+          <button id="redo-tech2-s2" title="Перезаписать">⟳</button>
+          <span id="status-tech2-s2" class="indicator not-recorded" title="Не записано">⛔</span>
+        </div>
+      </div>
+
+      <div class="session">
+        <div class="waveform-indicator" id="waveform-tech2-s3" title="Идёт запись">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span class="session-label">Сессия 3</span>
+        <div class="buttons">
+        <button id="start-tech2-s3" title="Начать запись">▶</button>
+          <button id="stop-tech2-s3" title="Конец записи">■</button>
+          <button id="play-tech2-s3" title="Воспроизвести">🔊</button>
+          <button id="stopplay-tech2-s3" title="Остановить прослушивание">🔇</button>
+          <button id="redo-tech2-s3" title="Перезаписать">⟳</button>
+          <span id="status-tech2-s3" class="indicator not-recorded" title="Не записано">⛔</span>
+        </div>
+      </div>
+
+       <div class="tech-info">
+     Спокойно вдыхайте через нос на 4 секунды, задерживайте дыхание на 2 секунды, затем выдыхайте через рот на 4 секунды. Умеренный ритм способствует восстановлению после стресса и улучшает контроль над дыханием.
+    </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- 🔶 ТЕХНИКА 3 -->
+<section class="technique">
+  <h2 class="technique-title">Техника 3: Coherent breathing (5-5)</h2>
+  <div class="technique-content">
+    
+    <!-- Видеоинструкция -->
+    <div class="video-side">
+      <video src="video/55_rus.mp4" controls></video>
+    </div>
+
+    <!-- Сессии -->
+    <div class="sessions">
+      <div class="session">
+        <div class="waveform-indicator" id="waveform-tech3-s1" title="Идёт запись">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span class="session-label">Сессия 1</span>
+        <div class="buttons">
+          <button id="start-tech3-s1" title="Начать запись">▶</button>
+          <button id="stop-tech3-s1" title="Конец записи">■</button>
+          <button id="play-tech3-s1" title="Воспроизвести">🔊</button>
+           <button id="stopplay-tech3-s1" title="Остановить прослушивание">🔇</button>
+          <button id="redo-tech3-s1" title="Перезаписать">⟳</button>
+          <span id="status-tech3-s1" class="indicator not-recorded" title="Не записано">⛔</span>
+        </div>
+      </div>
+
+      <div class="session">
+        <div class="waveform-indicator" id="waveform-tech3-s2" title="Идёт запись">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span class="session-label">Сессия 2</span>
+        <div class="buttons">
+          <button id="start-tech3-s2" title="Начать запись">▶</button>
+          <button id="stop-tech3-s2" title="Конец записи">■</button>
+          <button id="play-tech3-s2" title="Воспроизвести">🔊</button>
+           <button id="stopplay-tech3-s2" title="Остановить прослушивание">🔇</button>
+          <button id="redo-tech3-s2" title="Перезаписать">⟳</button>
+          <span id="status-tech3-s2" class="indicator not-recorded" title="Не записано">⛔</span>
+        </div>
+      </div>
+
+      <div class="session">
+        <div class="waveform-indicator" id="waveform-tech3-s3" title="Идёт запись">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span class="session-label">Сессия 3</span>
+        <div class="buttons">
+          <button id="start-tech3-s3" title="Начать запись">▶</button>
+          <button id="stop-tech3-s3" title="Конец записи">■</button>
+          <button id="play-tech3-s3" title="Воспроизвести">🔊</button>
+           <button id="stopplay-tech3-s3" title="Остановить прослушивание">🔇</button>
+          <button id="redo-tech3-s3" title="Перезаписать">⟳</button>
+          <span id="status-tech3-s3" class="indicator not-recorded" title="Не записано">⛔</span>
+        </div>
+      </div>
+
+       <div class="tech-info">
+      Медленный вдох через нос на 5 секунд и плавный выдох также через нос на 5 секунд - без пауз. Эта техника синхронизирована с сердечным ритмом и широко используется для тренировки вариабельности сердечного ритма (HRV).
+    </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p id="participant-id">Ваш ID: <strong id="pid"></strong></p>
+  <p id="session-progress">Записано сессий: 0 из 9</p>
+  <p>Ваш постоянный код: 
+    <strong id="fixed-code"></strong> 
+    <button onclick="copyFixedCode()" title="Скопировать код">📋</button>
+  </p>
+  <button id="download-zip" class="zip-btn">⬇📦 Скачать все записи WAV (ZIP)</button>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
